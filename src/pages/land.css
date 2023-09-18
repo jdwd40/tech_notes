@@ -1,0 +1,51 @@
+/* land.css */
+
+.landing-page-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .landing-header, .landing-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .landing-content p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .explore-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #0056b3;
+  }
+  
