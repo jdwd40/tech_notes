@@ -1,0 +1,31 @@
+## Installing MongoDB on WSL Ubuntu
+
+1. **Import MongoDB public GPG Key**:
+   ```bash
+   wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+   ```
+   This step imports the necessary GPG key for the MongoDB repository.
+
+2. **Create MongoDB List File**:
+   ```bash
+   echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+   ```
+   Here, we add the MongoDB repository to our system.
+
+3. **Update Local Package Database**:
+   ```bash
+   sudo apt-get update
+   ```
+   Update the package database to include the newly added MongoDB repository.
+
+4. **Install MongoDB**:
+   ```bash
+   sudo apt-get install -y mongodb-org
+   ```
+   Install MongoDB using the `apt-get` command.
+
+5. **Verify Installation**:
+   Verify the installation by checking the MongoDB server version.
+   ```bash
+   mongod --version
+   ```

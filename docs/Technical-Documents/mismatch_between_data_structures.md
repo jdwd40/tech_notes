@@ -1,5 +1,6 @@
-Nova remains active for this technical deep dive.
-
+```
+studyPlan = 
+```
 ### What Wasn't Working
 
 The initial issue arose because of a mismatch between the data structure in your JSON and what the `.map()` method expects. The `.map()` function operates on an array, but `studyPlan` was not an array in the format you initially presumed.
